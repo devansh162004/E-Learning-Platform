@@ -26,7 +26,7 @@ def course_detail(request, id):
 def enroll(request, id):
     course = Course.objects.get(id=id)
 
-    # Prevent duplicate enrollment
+   
     if not Enrollment.objects.filter(user=request.user, course=course).exists():
         Enrollment.objects.create(
             user=request.user,
