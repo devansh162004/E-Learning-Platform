@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="detail-container">
+    <div class="course-detail-card">
+        <h1>{{ course.title }}</h1>
+        <p class="description">{{ course.description }}</p>
+
+        <p><strong>Instructor:</strong> {{ course.instructor }}</p>
+
+        <a href="/enroll/{{ course.id }}/" class="enroll-btn">
+            Enroll Now 🚀
+        </a>
+    </div>
+</div>
+
+{% endblock %}

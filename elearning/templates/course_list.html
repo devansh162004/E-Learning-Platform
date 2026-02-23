@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Courses</h1>
+
+<form method="GET" class="search-form">
+    <input type="text" name="q" placeholder="🔍 Search courses...">
+    <button type="submit">Search</button>
+</form>
+
+<div class="course-grid">
+
+    {% for course in page_obj %}
+        <div class="course-card">
+            <h2>{{ course.title }}</h2>
+            <p>{{ course.description }}</p>
+            <p><strong>Instructor:</strong> {{ course.instructor }}</p>
+            <a href="{% url 'course_detail' course.id %}">View Course</a>
+        </div>
+    {% endfor %}
+
+</div>
+
+<div class="pagination">
+    {% if page_obj.has_previous %}
+        <a href="?page={{ page_obj.previous_page_number }}">Previous</a>
+    {% endif %}
+
+    <span>Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</span>
+
+    {% if page_obj.has_next %}
+        <a href="?page={{ page_obj.next_page_number }}">Next</a>
+    {% endif %}
+</div>
+
+{% endblock %}
