@@ -91,7 +91,7 @@ nav a:hover {
     border-radius: 6px;
 }
 
-/* Search Bar */
+
 .search-form {
     display: flex;
     gap: 10px;
@@ -128,7 +128,7 @@ nav a:hover {
     background: #1e40af;
 }
 
-/* Course Detail Page */
+
 .course-detail-card {
     background: white;
     padding: 40px;
@@ -155,7 +155,7 @@ nav a:hover {
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-/* Enroll Success Card */
+
 .enroll-card {
     background: white;
     padding: 50px;
@@ -190,7 +190,7 @@ nav a:hover {
     transform: translateY(-3px);
 }
 
-/* Course Detail Page */
+
 .detail-container {
     display: flex;
     justify-content: center;
@@ -231,7 +231,7 @@ nav a:hover {
     transform: translateY(-4px);
 }
 
-/* Login Page */
+
 .login-container {
     display: flex;
     justify-content: center;
@@ -297,7 +297,7 @@ nav a:hover {
     transform: translateY(-3px);
 }
 
-/* Dashboard */
+
 .dashboard-container {
     padding: 60px 80px;
 }
